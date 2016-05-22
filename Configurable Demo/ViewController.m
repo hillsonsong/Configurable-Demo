@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic,strong) SwitchView *_view;
+@property (nonatomic,strong)UIView *a;
 
 @end
 
@@ -20,23 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    SwitchView *_switch = [[SwitchView alloc] initWithFrame:CGRectMake(50, 50, 200, 50)];
-    _switch.backgroundColor = [UIColor redColor];
+    SwitchView *_switch = [[SwitchView alloc] initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.frame), 50.f)];
     _switch.channelWidth = 100;
     _switch.switchChannels = @[@"aa",@"bb",@"cc",@"dd",@"ee"];
     _switch.doSelectBlock = ^(NSUInteger index) {
         NSLog(@"select index:%lu",(unsigned long)index);
     };
     [self.view addSubview:_switch];
-    __view = _switch;
+    _a = _switch;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)a:(id)sender {
-    __view.frame = CGRectMake(50, 50, 300, 100);
+    _a.frame = CGRectMake(50, 50, 200, 50.f);
 }
 
 @end

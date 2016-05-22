@@ -22,6 +22,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
+        self.scroll.showsHorizontalScrollIndicator = NO;
         [self addSubview:self.scroll];
         //set defaul channelWidth
         self.channelWidth = 44.f;
@@ -79,13 +80,23 @@
     self.scroll.contentSize = CGSizeMake(totalWidth,height);
     
     //add new button in scroll
-    for (NSString *title in _switchChannels) {
+    for (int index = 0; index < _switchChannels.count; index++) {
+        NSString *title = _switchChannels[index];
         UIButton *newBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-        newBtn.frame = CGRectMake(_channelWidth*[_switchChannels indexOfObject:title], 0, _channelWidth, height);
+        newBtn.frame = CGRectMake(_channelWidth*index, 0, _channelWidth, height);
         [newBtn setTitle:title forState:UIControlStateNormal];
-        [newBtn addTarget:self action:@selector(didClickButton:) forControlEvents:UIControlEventTouchUpInside];
+        [newBtn addTarget:self
+                   action:@selector(didClickButton:)
+         forControlEvents:UIControlEventTouchUpInside];
         [_scroll addSubview:newBtn];
         [self.buttonsArray addObject:newBtn];
+        //add separate line
+        if (index != 0 && index != _switchChannels.count) {
+            UIView *line = [[UIView alloc] initWithFrame:CGRectMake(_channelWidth*index, 0, 1, height)];
+            line.backgroundColor = [UIColor lightGrayColor];
+            line.tag = 10000+index;
+            [_scroll addSubview: line];
+        }
     }
 }
 
@@ -118,7 +129,11 @@
     for (UIButton *btn in self.buttonsArray) {
         NSString *title = btn.titleLabel.text;
         if ([_switchChannels containsObject:title]) {
-            btn.frame = CGRectMake(_channelWidth*[_switchChannels indexOfObject:title], 0, _channelWidth, CGRectGetHeight(newFrame));
+            NSInteger index = [_switchChannels indexOfObject:title];
+            btn.frame = CGRectMake(_channelWidth*index, 0, _channelWidth, CGRectGetHeight(newFrame));
+            //adjust separate line
+            UIView *line = [_scroll viewWithTag:10000+index];
+            line.frame = CGRectMake(_channelWidth*index, 0, 1, CGRectGetHeight(newFrame));
         }
     }
 }

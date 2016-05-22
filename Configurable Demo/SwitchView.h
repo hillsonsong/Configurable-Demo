@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-/* 栏目切换时，选中回调实用类,做相应界面切换操作* */
+/* 栏目切换时，选中回调类,做相应界面切换操作* */
 typedef void (^SwtichBlock)(NSUInteger selectIndex);
 
 @interface SwitchView : UIView
