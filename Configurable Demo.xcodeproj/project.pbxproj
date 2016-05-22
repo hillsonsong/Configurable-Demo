@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8271ED01CF20A0F00E13762 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8271ECF1CF20A0F00E13762 /* BaseTableViewCell.m */; };
 		F8B8EF7A1CF1D7B5003511E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8EF791CF1D7B5003511E3 /* main.m */; };
 		F8B8EF7D1CF1D7B5003511E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8EF7C1CF1D7B5003511E3 /* AppDelegate.m */; };
 		F8B8EF801CF1D7B5003511E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8EF7F1CF1D7B5003511E3 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8271ECE1CF20A0F00E13762 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		F8271ECF1CF20A0F00E13762 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		F8B8EF751CF1D7B5003511E3 /* Configurable Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Configurable Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B8EF791CF1D7B5003511E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8B8EF7B1CF1D7B5003511E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				F8B8EF7F1CF1D7B5003511E3 /* ViewController.m */,
 				F8B8EF921CF1D8D7003511E3 /* SwitchView.h */,
 				F8B8EF931CF1D8D7003511E3 /* SwitchView.m */,
+				F8271ECE1CF20A0F00E13762 /* BaseTableViewCell.h */,
+				F8271ECF1CF20A0F00E13762 /* BaseTableViewCell.m */,
 				F8B8EF811CF1D7B5003511E3 /* Main.storyboard */,
 				F8B8EF841CF1D7B5003511E3 /* Assets.xcassets */,
 				F8B8EF861CF1D7B5003511E3 /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8271ED01CF20A0F00E13762 /* BaseTableViewCell.m in Sources */,
 				F8B8EF941CF1D8D7003511E3 /* SwitchView.m in Sources */,
 				F8B8EF801CF1D7B5003511E3 /* ViewController.m in Sources */,
 				F8B8EF7D1CF1D7B5003511E3 /* AppDelegate.m in Sources */,
@@ -306,6 +312,7 @@
 				F8B8EF8E1CF1D7B5003511E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
