@@ -13,6 +13,7 @@
 		F8B8EF831CF1D7B5003511E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B8EF811CF1D7B5003511E3 /* Main.storyboard */; };
 		F8B8EF851CF1D7B5003511E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B8EF841CF1D7B5003511E3 /* Assets.xcassets */; };
 		F8B8EF881CF1D7B5003511E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B8EF861CF1D7B5003511E3 /* LaunchScreen.storyboard */; };
+		F8B8EF941CF1D8D7003511E3 /* SwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8EF931CF1D8D7003511E3 /* SwitchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F8B8EF841CF1D7B5003511E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B8EF871CF1D7B5003511E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8B8EF891CF1D7B5003511E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B8EF921CF1D8D7003511E3 /* SwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchView.h; sourceTree = "<group>"; };
+		F8B8EF931CF1D8D7003511E3 /* SwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				F8B8EF7C1CF1D7B5003511E3 /* AppDelegate.m */,
 				F8B8EF7E1CF1D7B5003511E3 /* ViewController.h */,
 				F8B8EF7F1CF1D7B5003511E3 /* ViewController.m */,
+				F8B8EF921CF1D8D7003511E3 /* SwitchView.h */,
+				F8B8EF931CF1D8D7003511E3 /* SwitchView.m */,
 				F8B8EF811CF1D7B5003511E3 /* Main.storyboard */,
 				F8B8EF841CF1D7B5003511E3 /* Assets.xcassets */,
 				F8B8EF861CF1D7B5003511E3 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B8EF941CF1D8D7003511E3 /* SwitchView.m in Sources */,
 				F8B8EF801CF1D7B5003511E3 /* ViewController.m in Sources */,
 				F8B8EF7D1CF1D7B5003511E3 /* AppDelegate.m in Sources */,
 				F8B8EF7A1CF1D7B5003511E3 /* main.m in Sources */,
